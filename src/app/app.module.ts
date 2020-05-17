@@ -12,15 +12,20 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {FormsModule} from '@angular/forms'
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {AccordionModule} from 'primeng/accordion';
+import {MenuItem} from 'primeng/api';
+import {CalendarModule} from 'primeng/calendar';
 
 @NgModule({
   declarations: [
     AppComponent,
+
     PostCreateComponent,
     PostListComponent,
     HeaderComponent
   ],
   imports: [
+    AccordionModule,  CalendarModule,
     BrowserModule,
     FormsModule,
     MatToolbarModule,

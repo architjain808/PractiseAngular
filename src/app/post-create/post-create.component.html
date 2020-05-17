@@ -1,10 +1,18 @@
 <mat-card>
-
-    <input matInput type="text" [(ngModel)]="enteredtitle">
-
-
-    <textarea matInput rows="6" [(ngModel)]="enteredcontent" ></textarea>
-
+<div class="form1">
+   <input matInput type="text" placeholder="Title of Post" [(ngModel)]="enteredtitle">
+<br>
+<br>
+    <textarea matInput rows="6" placeholder="Content" [(ngModel)]="enteredcontent" ></textarea>
+</div>
+<br>
+<h2>Date</h2>
+<p-calendar [(ngModel)]="date"></p-calendar>
+<br>
+<br>
   <button mat-raised-button color = "primary" (click) = "OnAddPost()">Save</button>
 </mat-card>
 <!-- my practise -->
+
+
+
